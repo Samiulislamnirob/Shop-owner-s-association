@@ -1,0 +1,1 @@
+# Shop-owner-s-association
