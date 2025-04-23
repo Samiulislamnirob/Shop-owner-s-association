@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.VendorPerformance">
+   <children>
+      <TextField fx:id="vendorNameField" layoutX="24.0" layoutY="27.0" />
+      <ComboBox fx:id="ratingComboBox" layoutX="187.0" layoutY="27.0" prefWidth="150.0" />
+      <TableView fx:id="ratingsTable" layoutX="7.0" layoutY="81.0" prefHeight="200.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="vendorColumn" prefWidth="283.20001220703125" text="C1" />
+          <TableColumn fx:id="ratingColumn" prefWidth="309.5999755859375" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="handleSubmit" layoutX="14.0" layoutY="303.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleEdit" layoutX="108.0" layoutY="303.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleDelete" layoutX="187.0" layoutY="303.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleView" layoutX="278.0" layoutY="303.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleLogout" layoutX="396.0" layoutY="316.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

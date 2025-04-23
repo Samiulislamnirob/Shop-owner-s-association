@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.Maintenance">
+   <children>
+      <TextField fx:id="shopname" layoutX="35.0" layoutY="25.0" text="username " />
+      <PasswordField fx:id="passTextfield" layoutX="235.0" layoutY="25.0" text="password" />
+      <Button fx:id="loginbutton" layoutX="399.0" layoutY="25.0" mnemonicParsing="false" text="login" />
+      <TextField fx:id="shoptextfield" layoutX="14.0" layoutY="75.0" text="shopname" />
+      <ComboBox fx:id="issuetype" layoutX="214.0" layoutY="75.0" prefWidth="150.0" promptText="issue type" />
+      <ComboBox fx:id="urgencycombobox" layoutX="367.0" layoutY="75.0" prefWidth="150.0" promptText="urgency level" />
+      <TextArea fx:id="description" layoutX="14.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0" text="Description&#10;" />
+      <Button fx:id="handlesubmit" layoutX="223.0" layoutY="110.0" mnemonicParsing="false" onAction="#handlelogin" text="submit" />
+      <Button fx:id="handleclear" layoutX="284.0" layoutY="110.0" mnemonicParsing="false" onAction="#handlelogin" text="clear" />
+      <Button fx:id="handleeditrequest" layoutX="341.0" layoutY="110.0" mnemonicParsing="false" onAction="#handlelogin" text="edit" />
+      <Button fx:id="handlelogout" layoutX="406.0" layoutY="110.0" mnemonicParsing="false" onAction="#handlelogout" text="logout" />
+      <TableView fx:id="tableview" layoutX="214.0" layoutY="148.0" prefHeight="200.0" prefWidth="234.0">
+        <columns>
+          <TableColumn fx:id="shopnamecolumn" prefWidth="57.60005187988281" text="shop name" />
+          <TableColumn fx:id="issuetypecolumn" prefWidth="60.79998779296875" text="issue type" />
+            <TableColumn fx:id="descriptioncolumn" prefWidth="70.39996337890625" text="description" />
+            <TableColumn fx:id="urgentcolumn" prefWidth="75.0" text="urgency level" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

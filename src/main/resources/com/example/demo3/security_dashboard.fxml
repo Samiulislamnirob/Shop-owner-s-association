@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.SecurityDashboard">
+   <children>
+      <Label layoutX="147.0" layoutY="25.0" prefHeight="18.0" prefWidth="272.0" text="Security &amp; Maintenance Dashboard" />
+      <Button layoutX="36.0" layoutY="79.0" mnemonicParsing="false" onAction="#goToGoal1" text="Log Maintenance Issues" />
+      <Button layoutX="36.0" layoutY="147.0" mnemonicParsing="false" onAction="#goToGoal2" text="update Maintenance Status" />
+      <Button layoutX="36.0" layoutY="219.0" mnemonicParsing="false" onAction="#goToGoal3" text="Record Security Incidents" />
+      <Button layoutX="36.0" layoutY="282.0" mnemonicParsing="false" onAction="#goToGoal4" text="Schedule Cleaning &amp; Maintenance" />
+      <Button layoutX="402.0" layoutY="79.0" mnemonicParsing="false" onAction="#goToGoal5" text="Generate Daily Reports" />
+      <Button layoutX="402.0" layoutY="147.0" mnemonicParsing="false" onAction="#goToGoal6" text="track Vendor Performance" />
+      <Button layoutX="402.0" layoutY="206.0" mnemonicParsing="false" onAction="#goToGoal7" text="Handle Emergency Alerts" />
+      <Button layoutX="402.0" layoutY="282.0" mnemonicParsing="false" onAction="#goToGoal8" text="Monitor CCTV Records" />
+      <Button layoutX="218.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleLogout" text="logout" />
+   </children>
+</AnchorPane>

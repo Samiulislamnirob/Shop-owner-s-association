@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo3.ReportController"
+      spacing="15" alignment="TOP_LEFT">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Member Participation Report Generator" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <!-- Filter Section -->
+    <HBox spacing="10">
+        <Label text="Report Type:"/>
+        <ComboBox fx:id="reportTypeBox" prefWidth="150"/>
+
+        <Label text="Filter By Member:"/>
+        <TextField fx:id="memberFilterField" promptText="Member Name or ID" prefWidth="150"/>
+
+        <Label text="Date:"/>
+        <DatePicker fx:id="datePicker"/>
+    </HBox>
+
+    <!-- Buttons -->
+    <HBox spacing="10">
+        <Button text="Generate Report" onAction="#handleGenerate"/>
+        <Button text="Export to PDF" onAction="#handleExportPDF"/>
+        <Button text="Print" onAction="#handlePrint"/>
+        <Button text="Logout" onAction="#handleLogout"/>
+    </HBox>
+
+    <!-- Display Area -->
+    <Label text="Report Output:"/>
+    <TextArea fx:id="reportOutput" prefRowCount="12" wrapText="true"/>
+
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ProgramRegistration">
+   <children>
+      <Label layoutX="190.0" layoutY="14.0" prefHeight="18.0" prefWidth="198.0" text="Program Registration Panel" />
+      <TextField fx:id="programBox" layoutX="14.0" layoutY="47.0" text="Member ID" />
+      <TextField fx:id="memberNameField" layoutX="215.0" layoutY="47.0" text="Member Name" />
+      <ComboBox fx:id="programBox" layoutX="388.0" layoutY="47.0" prefWidth="150.0" promptText="Select Program" />
+      <Button fx:id="confirmBtn" layoutX="25.0" layoutY="89.0" mnemonicParsing="false" onAction="#confirmBtn" text="Confirm" />
+      <Button fx:id="updateBtn" layoutX="137.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleUpdate" text="update" />
+      <Button fx:id="removeBtn" layoutX="238.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleRemove" text="remove" />
+      <Button fx:id="clearBtn" layoutX="339.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleRemove" text="clear" />
+      <Button fx:id="logoutBtn" layoutX="471.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleLogout" text="logout" />
+      <TableView fx:id="registrationTable" layoutY="147.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="memberIdCol" prefWidth="188.800048828125" text="Member ID" />
+          <TableColumn fx:id="memberNameCol" prefWidth="150.39996337890625" text="Member Name" />
+            <TableColumn fx:id="programCol" prefWidth="260.79998779296875" text="Program" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo3.CommunicationController"
+      spacing="15" alignment="TOP_LEFT">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Header -->
+    <Label text="Member Communication Panel" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <!-- Message Input Area -->
+    <Label text="Select Recipient:"/>
+    <ComboBox fx:id="recipientBox" prefWidth="200"/>
+
+    <Label text="Type Message:"/>
+    <TextArea fx:id="messageBox" prefRowCount="3" prefWidth="300"/>
+
+    <!-- Action Buttons -->
+    <HBox spacing="10">
+        <Button text="Send" fx:id="sendBtn" onAction="#handleSend"/>
+        <Button text="Edit" fx:id="editBtn" onAction="#handleEdit"/>
+        <Button text="Delete" fx:id="deleteBtn" onAction="#handleDelete"/>
+        <Button text="Clear" fx:id="clearBtn" onAction="#handleClear"/>
+        <Button text="Logout" fx:id="logoutBtn" onAction="#handleLogout"/>
+    </HBox>
+
+    <!-- Conversation History Table -->
+    <Label text="Conversation History:"/>
+    <TableView fx:id="messageTable" prefHeight="250">
+        <columns>
+            <TableColumn fx:id="senderCol" text="Sender" prefWidth="100"/>
+            <TableColumn fx:id="recipientCol" text="Recipient" prefWidth="100"/>
+            <TableColumn fx:id="contentCol" text="Message" prefWidth="300"/>
+        </columns>
+    </TableView>
+
+</VBox>

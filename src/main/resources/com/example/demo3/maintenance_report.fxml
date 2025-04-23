@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.MaintenanceReport">
+   <children>
+      <DatePicker fx:id="fromDatePicker" layoutX="18.0" layoutY="19.0" />
+      <DatePicker fx:id="toDatePicker" layoutX="197.0" layoutY="19.0" />
+      <Button fx:id="handleExport" layoutX="381.0" layoutY="19.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleSavePdf" layoutX="445.0" layoutY="19.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handlePrint" layoutX="505.0" layoutY="19.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleClear" layoutX="18.0" layoutY="53.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleLogout" layoutX="80.0" layoutY="53.0" mnemonicParsing="false" text="Button" />
+      <TableView fx:id="reportTable" layoutX="8.0" layoutY="116.0" prefHeight="264.0" prefWidth="712.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="122.4000244140625" text="date" />
+          <TableColumn fx:id="taskColumn" prefWidth="95.20001220703125" text="task" />
+            <TableColumn fx:id="areaColumn" prefWidth="99.99993896484375" text="area" />
+            <TableColumn fx:id="staffColumn" prefWidth="140.800048828125" text="staff" />
+            <TableColumn fx:id="statusColumn" prefWidth="244.00006103515625" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

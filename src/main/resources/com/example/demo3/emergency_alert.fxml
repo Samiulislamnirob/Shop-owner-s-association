@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.EmergencyAlert">
+   <children>
+      <TextField fx:id="alertTypeField" layoutX="14.0" layoutY="28.0" />
+      <TextField fx:id="locationField" layoutX="176.0" layoutY="28.0" />
+      <TableView fx:id="alertHistoryTable" layoutX="14.0" layoutY="148.0" prefHeight="200.0" prefWidth="582.0">
+        <columns>
+          <TableColumn fx:id="alertTypeColumn" prefWidth="168.0" text="alerttype" />
+            <TableColumn fx:id="locationColumn" prefWidth="249.60003662109375" text="location" />
+            <TableColumn fx:id="dateTimeColumn" prefWidth="163.19998779296873" text="date time" />
+        </columns>
+      </TableView>
+      <Button fx:id="handleSendAlert" layoutX="25.0" layoutY="82.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleconfirm" layoutX="105.0" layoutY="83.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleClear" layoutX="191.0" layoutY="83.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleExport" layoutX="274.0" layoutY="83.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="handleLogout" layoutX="354.0" layoutY="83.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

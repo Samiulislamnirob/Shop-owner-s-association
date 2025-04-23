@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.FeedbackSection">
+   <children>
+      <Label layoutX="32.0" layoutY="22.0" prefHeight="18.0" prefWidth="168.0" text="shop name" />
+      <TextField fx:id="shopNameField" layoutX="22.0" layoutY="40.0" />
+      <TextArea fx:id="feedbackArea" layoutX="16.0" layoutY="66.0" prefHeight="87.0" prefWidth="200.0" />
+      <ComboBox fx:id="ratingBox" layoutX="216.0" layoutY="40.0" prefWidth="150.0" />
+      <Button fx:id="submitBtn" layoutX="389.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleSubmit" text="submit" />
+      <Button fx:id="clearBtn" layoutX="461.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleClear" text="clear" />
+      <Button fx:id="markReviewedBtn" layoutX="248.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleMarkReviewed" text="mark reviewd" />
+      <TableView fx:id="feedbackTable" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="148.0" text="Shop Name" />
+          <TableColumn fx:id="feedbackCol" prefWidth="95.20001220703125" text="feedback" />
+            <TableColumn fx:id="ratingCol" prefWidth="153.5999755859375" text="rating" />
+            <TableColumn fx:id="reviewedCol" prefWidth="185.59991455078125" text="Reviewed" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

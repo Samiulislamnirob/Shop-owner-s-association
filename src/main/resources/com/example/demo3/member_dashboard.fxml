@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.MemberDashboard">
+   <children>
+      <Label layoutX="140.0" layoutY="25.0" prefHeight="18.0" prefWidth="313.0" text="Member Relation Manager Dashboard" />
+      <Button layoutX="32.0" layoutY="83.0" mnemonicParsing="false" onAction="#goToGoal1" text="Manage Shop Owner Profiles" />
+      <Button layoutX="32.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToGoal2" text=" Handle Member Complaints" />
+      <Button layoutX="32.0" layoutY="231.0" mnemonicParsing="false" onAction="#goToGoal3" text=" Send Announcements" />
+      <Button layoutX="32.0" layoutY="315.0" mnemonicParsing="false" onAction="#goToGoal4" text="Collect Member Feedback" />
+      <Button layoutX="428.0" layoutY="96.0" mnemonicParsing="false" onAction="#goToGoal5" text="Manage Event Attendance" />
+      <Button layoutX="428.0" layoutY="159.0" mnemonicParsing="false" onAction="#goToGoal6" text="Manage Program Registration" />
+      <Button layoutX="428.0" layoutY="231.0" mnemonicParsing="false" onAction="#goToGoal7" text="Internal Member Communication" />
+      <Button layoutX="428.0" layoutY="315.0" mnemonicParsing="false" onAction="#goToGoal8" text="Generate Participation Reports" />
+      <Button layoutX="271.0" layoutY="361.0" mnemonicParsing="false" onAction="#handlelogout" text="logout" />
+   </children>
+</AnchorPane>

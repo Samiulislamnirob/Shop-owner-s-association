@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.ComplaintHandler">
+   <children>
+      <TextField fx:id="memberNameField" layoutX="27.0" layoutY="31.0" />
+      <ComboBox fx:id="complaintTypeBox" layoutX="192.0" layoutY="31.0" prefWidth="150.0" />
+      <TextArea fx:id="complaintDetailsField" layoutX="27.0" layoutY="72.0" prefHeight="68.0" prefWidth="200.0" />
+      <Button fx:id="handleSubmit" layoutX="365.0" layoutY="31.0" mnemonicParsing="false" text="submit" />
+      <Button fx:id="handleUpdateStatus" layoutX="430.0" layoutY="31.0" mnemonicParsing="false" text="Update Status " />
+      <Button fx:id="handleClear" layoutX="300.0" layoutY="80.0" mnemonicParsing="false" text="clear" />
+      <Button fx:id="handleLogout" layoutX="241.0" layoutY="80.0" mnemonicParsing="false" text="logout" />
+      <TableView fx:id="complaintTable" layoutX="27.0" layoutY="154.0" prefHeight="200.0" prefWidth="562.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="112.00006103515625" text="Member Name" />
+          <TableColumn fx:id="typeCol" prefWidth="116.7999267578125" text="Type" />
+            <TableColumn fx:id="detailsCol" prefWidth="146.4000244140625" text="Details" />
+            <TableColumn fx:id="statusCol" prefWidth="186.4000244140625" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
